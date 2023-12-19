@@ -1,18 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import ReactFacts from "./components/ReactFacts";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div>
-      <img src={logo}  width='40px' alt='React Logo' />
-      <h1>Fun facts about React</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was orginally created by Jordan Walke</li>
-        <li>He Has over 100K starts on Github</li>
-        <li>It is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps and mobile apps</li>
-      </ul>
+      <h1 className="header">Projects</h1>
+      <h2 className="">1. React Facts</h2>
+      <div>
+        <ReactFacts />
+      </div>
+      <h2 className="">2. Counter App</h2>
+      <Counter />
     </div>
   );
 }
